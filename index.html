@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Линни — цифровая сервисная книжка прямо в мессенджере MAX. Ведите историю ТО, следите за расходами и передайте историю при продаже. Без регистрации, бесплатно.">
+  <meta name="keywords" content="сервисная книжка, история ТО, история обслуживания автомобиля, расходы на автомобиль, мини-приложение MAX, передать историю при продаже">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Линни — Цифровая сервисная книжка в MAX">
+  <meta property="og:description" content="Фиксируйте каждое ТО, следите за расходами и передайте историю новому владельцу в один клик. Прямо в MAX, без регистрации, бесплатно.">
+  <meta property="og:image" content="images/logo-only.png">
+  <meta property="og:locale" content="ru_RU">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="images/logo-only.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Линни — Цифровая сервисная книжка в мессенджере MAX</title>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Линни — Сервисная книжка",
+    "description": "Цифровая сервисная книжка прямо в мессенджере MAX. Ведите историю ТО и следите за расходами на автомобиль.",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "iOS, Android, Web",
+    "inLanguage": "ru",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "RUB" },
+    "url": "https://max.ru/LinnyBot"
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       ШАПКА / НАВИГАЦИЯ
+  ═══════════════════════════════════════════════════════════ -->
+  <header class="site-header" id="site-header">
+    <nav class="nav container" aria-label="Основная навигация">
+      <a href="#" class="nav-logo">
+        <img src="images/logo-only.png" alt="Логотип Линни" width="36" height="36">
+        <span>Линни</span>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="#features">Возможности</a></li>
+        <li><a href="#how">Как работает</a></li>
+        <li><a href="#reviews">Отзывы</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+      <a href="https://max.ru/LinnyBot?startapp" class="btn btn-primary nav-cta">Открыть в MAX</a>
+      <button class="nav-burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+    <div class="mobile-menu" id="mobile-menu" hidden>
+      <ul role="list">
+        <li><a href="#features">Возможности</a></li>
+        <li><a href="#how">Как работает</a></li>
+        <li><a href="#reviews">Отзывы</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+      <a href="https://max.ru/LinnyBot?startapp" class="btn btn-primary">Открыть в MAX</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         HERO
+    ═══════════════════════════════════════════════════════════ -->
+    <section id="hero" class="section-hero">
+      <div class="container hero-grid">
+
+        <div class="hero-text">
+          <p class="hero-eyebrow">Мини-приложение для мессенджера MAX</p>
+          <h1>Вся история вашего автомобиля — прямо в MAX</h1>
+          <p class="hero-sub">Цифровая сервисная книжка в мессенджере, которым вы уже пользуетесь. Фиксируйте каждое ТО, следите за расходами и передайте историю новому владельцу в один клик.</p>
+          <div class="hero-cta">
+            <a href="https://max.ru/LinnyBot?startapp" class="btn btn-primary btn-lg">📱 Открыть в MAX</a>
+            <a href="#how" class="btn btn-ghost btn-lg">Узнать подробнее</a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="phone-mockup">
+            <div class="phone-notch"></div>
+            <div class="phone-screen">
+              <div class="app-statusbar">9:41</div>
+              <div class="app-topbar">
+                <span class="app-topbar-title">Линни</span>
+              </div>
+              <div class="app-body">
+                <p class="screen-heading">Мой гараж</p>
+                <div class="mock-car-card">
+                  <span class="mock-car-icon">🚗</span>
+                  <div class="mock-car-info">
+                    <strong>Toyota Camry 2020</strong>
+                    <span>45 000 км</span>
+                    <span class="mock-badge mock-badge--blue">ТО 12 мая 2024</span>
+                  </div>
+                  <span class="mock-chevron">›</span>
+                </div>
+                <div class="mock-car-card">
+                  <span class="mock-car-icon">🚙</span>
+                  <div class="mock-car-info">
+                    <strong>Lada Vesta 2021</strong>
+                    <span>28 500 км</span>
+                    <span class="mock-badge mock-badge--green">ТО 3 мар 2024</span>
+                  </div>
+                  <span class="mock-chevron">›</span>
+                </div>
+                <div class="mock-fab">+</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         ДОВЕРИЕ
+    ═══════════════════════════════════════════════════════════ -->
+    <section class="section-trust" aria-label="Ключевые преимущества">
+      <div class="container">
+        <ul class="trust-grid" role="list">
+          <li class="trust-item">
+            <span class="trust-icon" aria-hidden="true">🔓</span>
+            <strong>Без регистрации</strong>
+            <span>Войдите через аккаунт MAX</span>
+          </li>
+          <li class="trust-item">
+            <span class="trust-icon" aria-hidden="true">💚</span>
+            <strong>Бесплатно навсегда</strong>
+            <span>Никаких платных тарифов</span>
+          </li>
+          <li class="trust-item">
+            <span class="trust-icon" aria-hidden="true">📱</span>
+            <strong>Работает в MAX</strong>
+            <span>Не нужно скачивать отдельное приложение</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         ПРОБЛЕМА
+    ═══════════════════════════════════════════════════════════ -->
+    <section id="problem" class="section-problem">
+      <div class="container">
+        <h2 class="section-title">Где история вашей машины?</h2>
+        <div class="problem-grid">
+          <div class="problem-card">
+            <span class="problem-icon" aria-hidden="true">📄</span>
+            <h3>Бумажная книжка потерялась</h3>
+            <p>И вы не можете доказать покупателю, что масло меняли вовремя. Цена вопроса — десятки тысяч рублей при продаже.</p>
+          </div>
+          <div class="problem-card">
+            <span class="problem-icon" aria-hidden="true">🤔</span>
+            <h3>Не помните, когда делали ТО</h3>
+            <p>«Кажется, в прошлом году» — не лучший ответ на вопрос, почему мигает лампочка на приборной панели.</p>
+          </div>
+          <div class="problem-card">
+            <span class="problem-icon" aria-hidden="true">🧾</span>
+            <h3>Чеки из сервисов теряются</h3>
+            <p>А потом непонятно, сколько вообще ушло на автомобиль за год.</p>
+          </div>
+          <div class="problem-card">
+            <span class="problem-icon" aria-hidden="true">🤝</span>
+            <h3>При продаже слово против слова</h3>
+            <p>Устная история обслуживания ничего не стоит, покупатель не верит и сбивает цену.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         ВОЗМОЖНОСТИ
+    ═══════════════════════════════════════════════════════════ -->
+    <section id="features" class="section-features">
+      <div class="container">
+        <h2 class="section-title">Линни ведёт книжку вместо вас</h2>
+
+        <!-- Блок 1: Гараж -->
+        <div class="feature-block">
+          <div class="feature-visual">
+            <div class="feature-screen">
+              <div class="fs-header">
+                <span class="fs-title">Мой гараж</span>
+                <span class="fs-count">2 авто</span>
+              </div>
+              <div class="fs-card">
+                <span aria-hidden="true">🚗</span>
+                <div>
+                  <strong>Toyota Camry 2020</strong>
+                  <div class="fs-meta">45 000 км · VIN JT2BF28K…</div>
+                </div>
+              </div>
+              <div class="fs-card">
+                <span aria-hidden="true">🚙</span>
+                <div>
+                  <strong>Lada Vesta 2021</strong>
+                  <div class="fs-meta">28 500 км · Рабочая</div>
+                </div>
+              </div>
+              <div class="fs-card fs-card--add">
+                <span aria-hidden="true">＋</span>
+                <div><strong>Добавить автомобиль</strong></div>
+              </div>
+            </div>
+          </div>
+          <div class="feature-text">
+            <span class="feature-tag">🚗 Мой гараж</span>
+            <h3>Все ваши автомобили в одном месте</h3>
+            <p>Добавьте автомобиль за минуту: марка, модель, год, VIN, пробег. Несколько машин — семейный автопарк, рабочий автомобиль — всё в одном аккаунте MAX. Никаких отдельных логинов и паролей.</p>
+            <ul class="feature-list">
+              <li>Вход через аккаунт MAX — без регистрации</li>
+              <li>Несколько автомобилей без ограничений</li>
+              <li>Данные хранятся на сервере, не пропадают при смене телефона</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Блок 2: Сервисная книжка -->
+        <div class="feature-block feature-block--reverse">
+          <div class="feature-visual">
+            <div class="feature-screen">
+              <div class="fs-header">
+                <span class="fs-title">Toyota Camry</span>
+                <span class="fs-subtitle">45 000 км</span>
+              </div>
+              <div class="fs-record fs-record--blue">
+                <span class="fs-record-icon" aria-hidden="true">🔧</span>
+                <div class="fs-record-body">
+                  <strong>Замена масла и фильтра</strong>
+                  <div class="fs-meta">12 мая 2024 · 45 000 км · 3 500 ₽</div>
+                  <span class="fs-badge fs-badge--blue">ТО</span>
+                </div>
+              </div>
+              <div class="fs-record fs-record--orange">
+                <span class="fs-record-icon" aria-hidden="true">⚙️</span>
+                <div class="fs-record-body">
+                  <strong>Замена тормозных колодок</strong>
+                  <div class="fs-meta">20 янв 2024 · 42 100 км · 7 200 ₽</div>
+                  <span class="fs-badge fs-badge--orange">Ремонт</span>
+                </div>
+              </div>
+              <div class="fs-record fs-record--green">
+                <span class="fs-record-icon" aria-hidden="true">🛞</span>
+                <div class="fs-record-body">
+                  <strong>Сезонная замена шин</strong>
+                  <div class="fs-meta">5 ноя 2023 · 39 800 км · 2 000 ₽</div>
+                  <span class="fs-badge fs-badge--green">Расходники</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="feature-text">
+            <span class="feature-tag">📋 Сервисная книжка</span>
+            <h3>Каждое ТО — в два касания</h3>
+            <p>Записали масло — отметили в Линни. Поменяли колодки — отметили. Дата, пробег, сервис, стоимость, фото чека — вся информация структурирована и всегда под рукой.</p>
+            <ul class="feature-list">
+              <li>Подсказки при вводе — не нужно печатать с нуля</li>
+              <li>Прикрепите фото чека прямо из галереи</li>
+              <li>Предупреждение при несовпадении пробега</li>
+            </ul>
+            <div class="category-pills">
+              <span class="pill pill--blue">ТО</span>
+              <span class="pill pill--orange">Ремонт</span>
+              <span class="pill pill--green">Расходники</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Блок 3: Статистика -->
+        <div class="feature-block">
+          <div class="feature-visual">
+            <div class="feature-screen">
+              <div class="fs-header">
+                <span class="fs-title">Статистика расходов</span>
+              </div>
+              <div class="bar-chart" role="img" aria-label="График расходов по месяцам">
+                <div class="bar-wrap"><div class="bar" style="--h:45%"></div><span>Янв</span></div>
+                <div class="bar-wrap"><div class="bar" style="--h:62%"></div><span>Фев</span></div>
+                <div class="bar-wrap"><div class="bar" style="--h:28%"></div><span>Мар</span></div>
+                <div class="bar-wrap"><div class="bar bar--accent" style="--h:90%"></div><span>Апр</span></div>
+                <div class="bar-wrap"><div class="bar" style="--h:52%"></div><span>Май</span></div>
+                <div class="bar-wrap"><div class="bar" style="--h:38%"></div><span>Июн</span></div>
+              </div>
+              <div class="fs-stats-row">
+                <div class="fs-stat">
+                  <span class="fs-stat-value">34 800 ₽</span>
+                  <span class="fs-stat-label">за год</span>
+                </div>
+                <div class="fs-stat">
+                  <span class="fs-stat-value">5 800 ₽</span>
+                  <span class="fs-stat-label">в месяц</span>
+                </div>
+                <div class="fs-stat">
+                  <span class="fs-stat-value">8 400 км</span>
+                  <span class="fs-stat-label">между ТО</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="feature-text">
+            <span class="feature-tag">📊 Статистика</span>
+            <h3>Сколько стоит ваш автомобиль на самом деле</h3>
+            <p>Линни считает за вас: расходы за год, по категориям, средний интервал между ТО. Вы видите реальную картину, а не ощущение «вроде немного потратил».</p>
+            <ul class="feature-list">
+              <li>Общая сумма расходов за всё время и за год</li>
+              <li>Разбивка по категориям — ТО, ремонт, расходники</li>
+              <li>График расходов по месяцам</li>
+              <li>Средний пробег между обслуживаниями</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Блок 4: Передача -->
+        <div class="feature-block feature-block--reverse">
+          <div class="feature-visual">
+            <div class="feature-screen feature-screen--centered">
+              <div class="transfer-car-icon" aria-hidden="true">🚗</div>
+              <p class="transfer-title">Toyota Camry 2020</p>
+              <p class="transfer-sub">История за 3 года · 23 записи · 68 700 ₽</p>
+              <div class="qr-mock" role="img" aria-label="QR-код для передачи истории автомобиля">
+                <div class="qr-inner">
+                  <div class="qr-corner qr-corner--tl"></div>
+                  <div class="qr-corner qr-corner--tr"></div>
+                  <div class="qr-center"></div>
+                  <div class="qr-corner qr-corner--bl"></div>
+                </div>
+              </div>
+              <div class="mock-share-btn" aria-hidden="true">📤 Поделиться ссылкой</div>
+            </div>
+          </div>
+          <div class="feature-text">
+            <span class="feature-tag">🤝 Передача при продаже</span>
+            <h3>История машины — лучший аргумент при продаже</h3>
+            <p>Когда придёт время продавать, нажмите «Передать историю» — и получите ссылку, которую можно отправить покупателю прямо в MAX или любом другом мессенджере.</p>
+            <ol class="transfer-steps">
+              <li>Вы нажимаете «Передать историю»</li>
+              <li>Отправляете ссылку покупателю</li>
+              <li>Покупатель открывает полную историю в MAX</li>
+              <li>Принимает автомобиль и продолжает ведение книжки</li>
+            </ol>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         КАК ЭТО РАБОТАЕТ
+    ═══════════════════════════════════════════════════════════ -->
+    <section id="how" class="section-how">
+      <div class="container">
+        <h2 class="section-title">Начать — одна минута</h2>
+        <ol class="steps-list" aria-label="Шаги для начала работы">
+          <li class="step">
+            <span class="step-num" aria-hidden="true">1</span>
+            <div class="step-body">
+              <h3>Найдите бота Линни в MAX</h3>
+              <p>Нажмите «Открыть» или перейдите по ссылке <a href="https://max.ru/LinnyBot">max.ru/LinnyBot</a>.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step-num" aria-hidden="true">2</span>
+            <div class="step-body">
+              <h3>Добавьте автомобиль</h3>
+              <p>Марка, модель, год выпуска и текущий пробег — всё за пару минут.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step-num" aria-hidden="true">3</span>
+            <div class="step-body">
+              <h3>Внесите первую запись</h3>
+              <p>Последнее ТО, замена масла или что угодно ещё — начните с любого момента.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step-num" aria-hidden="true">4</span>
+            <div class="step-body">
+              <h3>Пользуйтесь</h3>
+              <p>История накапливается, расходы считаются автоматически.</p>
+            </div>
+          </li>
+        </ol>
+        <div class="how-cta">
+          <a href="https://max.ru/LinnyBot?startapp" class="btn btn-primary btn-lg">Попробовать бесплатно</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         ОТЗЫВЫ
+    ═══════════════════════════════════════════════════════════ -->
+    <section id="reviews" class="section-reviews">
+      <div class="container">
+        <h2 class="section-title">Водители уже ведут книжку в Линни</h2>
+        <div class="reviews-grid">
+          <article class="review">
+            <div class="review-stars" aria-label="Оценка: 5 звёзд">★★★★★</div>
+            <blockquote>
+              <p>«Продавал машину — показал покупателю историю в Линни прямо с телефона. Он увидел все замены масла, все ТО за 3 года. Торговался меньше, чем обычно. Доволен.»</p>
+            </blockquote>
+            <footer class="review-author">— Сергей П., Москва</footer>
+          </article>
+          <article class="review">
+            <div class="review-stars" aria-label="Оценка: 5 звёзд">★★★★★</div>
+            <blockquote>
+              <p>«Наконец понял, сколько реально трачу на машину. Оказалось — в полтора раза больше, чем думал. Зато теперь всё по статьям.»</p>
+            </blockquote>
+            <footer class="review-author">— Максим Д., Екатеринбург</footer>
+          </article>
+          <article class="review">
+            <div class="review-stars" aria-label="Оценка: 5 звёзд">★★★★★</div>
+            <blockquote>
+              <p>«Удобно, что не нужно скачивать отдельное приложение. MAX и так всегда открыт, и книжка там же.»</p>
+            </blockquote>
+            <footer class="review-author">— Анна К., Новосибирск</footer>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         ТАРИФЫ
+    ═══════════════════════════════════════════════════════════ -->
+    <section id="pricing" class="section-pricing">
+      <div class="container">
+        <h2 class="section-title">Бесплатно. Навсегда.</h2>
+        <div class="pricing-card">
+          <div class="pricing-badge">🎉 Бесплатно</div>
+          <ul class="pricing-list">
+            <li>✅ Неограниченное количество автомобилей</li>
+            <li>✅ Полная история сервисного обслуживания</li>
+            <li>✅ Статистика расходов и графики</li>
+            <li>✅ Прикрепление фото и документов</li>
+            <li>✅ Передача истории при продаже</li>
+            <li>✅ Напоминания о плановом ТО</li>
+          </ul>
+          <p class="pricing-note">Линни зарабатывает на партнёрстве с автосервисами — для водителей приложение всегда остаётся бесплатным.</p>
+          <a href="https://max.ru/LinnyBot?startapp" class="btn btn-primary btn-lg">Открыть бесплатно</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         FAQ
+    ═══════════════════════════════════════════════════════════ -->
+    <section id="faq" class="section-faq">
+      <div class="container">
+        <h2 class="section-title">Частые вопросы</h2>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>Нужно ли скачивать отдельное приложение?</summary>
+            <div class="faq-answer"><p>Нет. Линни работает как мини-приложение прямо внутри MAX. Нажмите «Открыть» в чате с ботом — и всё готово.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary>Нужна ли отдельная регистрация?</summary>
+            <div class="faq-answer"><p>Нет. Вы входите через свой аккаунт MAX — имя, аватар и идентификатор берутся автоматически.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary>Где хранятся мои данные?</summary>
+            <div class="faq-answer"><p>На защищённом сервере. Данные не пропадут при смене телефона и доступны с любого устройства, где установлен MAX.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary>Что будет с историей, если я продам машину?</summary>
+            <div class="faq-answer"><p>Вы передадите полную историю новому владельцу по ссылке. Он откроет её в MAX и сможет продолжить ведение книжки.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary>Можно ли добавить несколько автомобилей?</summary>
+            <div class="faq-answer"><p>Да, без ограничений. Семейный автопарк, рабочий автомобиль — всё в одном месте.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary>Линни работает только на телефоне?</summary>
+            <div class="faq-answer"><p>MAX доступен на iOS, Android, в браузере и на десктопе. Линни работает везде, где работает MAX (с некоторыми ограничениями на десктопе для функций камеры).</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         ФИНАЛЬНЫЙ CTA
+    ═══════════════════════════════════════════════════════════ -->
+    <section class="section-cta-final">
+      <div class="container">
+        <h2>Начните вести книжку прямо сейчас</h2>
+        <p>Это займёт минуту. Бесплатно. Прямо в MAX.</p>
+        <div class="cta-buttons">
+          <a href="https://max.ru/LinnyBot?startapp" class="btn btn-white btn-lg">📱 Открыть Линни в MAX</a>
+          <a href="https://max.ru/LinnyBot" class="btn btn-ghost-white btn-lg">Написать боту</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       ФУТЕР
+  ═══════════════════════════════════════════════════════════ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="footer-logo">
+            <img src="images/logo-only.png" alt="Логотип Линни" width="34" height="34">
+            <span>Линни</span>
+          </a>
+          <p class="footer-tagline">Порядок в гараже начинается здесь.</p>
+        </div>
+        <nav class="footer-nav" aria-label="Навигация в подвале">
+          <a href="#features">О приложении</a>
+          <a href="#">Для автосервисов</a>
+          <a href="#">Политика конфиденциальности</a>
+          <a href="#">Условия использования</a>
+          <a href="https://max.ru/LinnyBot">Поддержка в MAX</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 Линни. Все права защищены.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
