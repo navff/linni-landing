@@ -21,7 +21,7 @@ jobs:
           server: vh194.timeweb.ru
           username: ${{ secrets.SFTP_USERNAME }}
           password: ${{ secrets.SFTP_PASSWORD }}
-          local_path: ./*
+          local_path: ./
           remote_path: /home/c/ck10042/leanny-landing/public_html
-          sftp_only: true
+          sftp_only: false
           delete_remote_files: true
