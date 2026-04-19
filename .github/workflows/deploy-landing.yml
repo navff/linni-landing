@@ -24,4 +24,4 @@ jobs:
           local_path: ./*
           remote_path: /home/c/ck10042/leanny-landing/public_html
           sftp_only: true
-          delete_remote_files: false
+          delete_remote_files: true
