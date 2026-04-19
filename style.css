@@ -507,6 +507,18 @@ p  { color: var(--text-2); }
 .footer-bottom p { font-size: .875rem; color: rgba(255,255,255,.35); }
 
 /* ================================================================
+   FUEL
+================================================================ */
+.fs-record--fuel { background: #e8f4fd; border-left: 3px solid #29b6f6; }
+
+.fs-fuel-rate {
+  font-size: .6875rem;
+  font-weight: 700;
+  color: #0277bd;
+  margin-top: 3px;
+}
+
+/* ================================================================
    AI RECOMMENDATIONS
 ================================================================ */
 .fs-badge-ai {
